@@ -1,7 +1,0 @@
-import urlparse, time
-from api_app import apiz
-from flask import request, jsonify
-from api_app.Database import db
-from api_app.Functions import *
-
-u_prefix = '/db/api/user'

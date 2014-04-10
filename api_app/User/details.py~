@@ -1,9 +1,0 @@
-from api_app import Functions, prefixes
-
-
-from api_app import api
-@api.route(u_prefix + "/details/", methods=["GET"])
-def user_details():
-    json = get_json(request)
-    check_data(json, ['user'])
-    return send_response(user_data(json["user"], 'email'), "No such user found")
