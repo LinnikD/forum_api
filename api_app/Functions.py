@@ -1,5 +1,5 @@
 from flask import request, jsonify
-from api_app.Database import db
+from Database import db
 import urlparse, time
 
 def get_json(request):

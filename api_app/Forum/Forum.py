@@ -1,7 +1,7 @@
-from api_app import api_app
+from a import api_app
 from flask import request, jsonify
-from api_app.Database import db
-from api_app.Functions import *
+from Database import db
+from Functions import *
 
 f_prefix = '/db/api/forum' 
 
