@@ -1,0 +1,8 @@
+from Database import db
+from api_app import a
+
+
+@api_app.route("/db/api/clear/")
+def clear_db():
+	db.clear()
+	return 'Lol'
