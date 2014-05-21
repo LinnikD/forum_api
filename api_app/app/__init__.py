@@ -8,5 +8,3 @@ from Post import Post
 from Thread import Thread
 from Clear import *
 
-if __name__ == '__main__':
-    app.run()

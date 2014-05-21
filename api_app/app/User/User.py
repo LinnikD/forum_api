@@ -27,6 +27,7 @@ def user_create():
         return jsonify(response)
     response["username"] = json["username"]
     response["about"] = json["about"]
+    print "Inserting..."
     db.insert("INSERT INTO users(username,email,about,name) values (%s,%s,%s,%s) ",
               (response["username"], response["email"], response["about"], response["name"]))
     id = db.query("SELECT LAST_INSERT_ID() as id")

@@ -1,15 +1,6 @@
-from flask import Flask
-
-api_app = Flask(__name__)
-
 import sys
-sys.path.insert(0, '/home/uzzz/forum_api/api_app')
+sys.path.insert(0, '/root/forum_api/api_app/')
+sys.path.insert(0, '/root/forum_api/api_app/app')
 
-from User import User
-from Forum import Forum
-from Post import Post
-from Thread import Thread
-from Clear import *
+from app import api_app
 
-if __name__ == '__main__':
-    api_app.run()
